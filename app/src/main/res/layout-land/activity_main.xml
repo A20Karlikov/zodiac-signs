@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background2"
+    tools:context=".MainActivity">
+
+
+    <TextView
+        android:id="@+id/welcome_label"
+        android:layout_width="749dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="48dp"
+        android:fontFamily="casual"
+        android:gravity="center"
+        android:text="@string/welcome"
+        android:textColor="#009688"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/name_text"
+        android:layout_width="60dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="16dp"
+        android:fontFamily="casual"
+        android:gravity="center"
+        android:text="@string/person_name"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/welcome_label" />
+
+    <EditText
+        android:id="@+id/editTextTextPersonName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:fontFamily="casual"
+        android:hint="@string/enter_your_name"
+        android:inputType="textPersonName"
+        android:minHeight="48dp"
+        android:textColor="#FFFDFD"
+        android:textColorHint="#B5B5B5"
+        app:layout_constraintStart_toEndOf="@+id/name_text"
+        app:layout_constraintTop_toBottomOf="@+id/welcome_label"
+        tools:ignore="TextContrastCheck" />
+
+    <TextView
+        android:id="@+id/date_text"
+        android:layout_width="60dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="16dp"
+        android:fontFamily="casual"
+        android:gravity="center"
+        android:text="@string/date_text"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/name_text" />
+
+    <EditText
+        android:id="@+id/editdate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:ems="15"
+        android:focusable="false"
+        android:fontFamily="casual"
+        android:hint="@string/dd_mm_yyyy"
+        android:inputType="date"
+        android:minHeight="48dp"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#B5B5B5"
+        app:layout_constraintStart_toEndOf="@+id/date_text"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName"></EditText>
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:backgroundTint="#009688"
+        android:fontFamily="casual"
+        android:onClick="launchSecondActivity"
+        android:text="@string/button_next"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

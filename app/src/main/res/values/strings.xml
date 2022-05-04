@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">Zodiac Signs</string>
+    <string name="enter_your_name">Enter your name</string>
+    <string name="person_name">Name</string>
+    <string name="welcome">Welcome</string>
+    <string name="date_text">Date of birth</string>
+    <string name="dd_mm_yyyy">DD/MM/YYYY</string>
+    <string name="button_next">Next</string>
+    <string name="activity2_name">Which Sign Are You</string>
+    <string name="text_greeting">Hi,</string>
+    <string name="zodiac_sign_text">Your zodiac sign is:</string>
+    <string name="menu_title">MENU</string>
+    <string name="contact">About me</string>
+    <string name="exit">Exit</string>
+    <string name="title_exit">Warning</string>
+    <string name="exit_message">Do you want to quit?</string>
+    <string name="name_about_me">Александър Карликов</string>
+    <string name="number_about_me">+359883481604</string>
+    <string name="email_about_me">al.karlikov@gmail.com</string>
+    <string name="github_about_me">
+    <a href="https://github.com/A20Karlikov">https://github.com/A20Karlikov</a>
+    </string>
+</resources>
